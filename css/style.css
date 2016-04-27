@@ -1,0 +1,17 @@
+td {
+    text-align: center;
+    vertical-align: top;
+}
+.error{
+    color:red;
+    display:none;
+    margin:0 auto;
+    text-align:center;
+}
+th,tr,td {
+    vertical-align: middle !important;
+    text-align: right;
+}
+table > thead > tr > th {
+    border-bottom: none !important;
+}

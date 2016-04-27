@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <div class="container col-md-12">
+            <div class="col-md-8 col-md-offset-2" style="margin-top:5em;">
+                <div id="upperBlock" class="form-horizontal col-md-10 col-md-offset-1">
+                    <div class="col-md-10">
+                        <p class="form-control" style="border:none;">Winner: <span id="winner"></span></p>
+                    </div>
+                    <div class="col-md-2">
+                        <button id="newWinner" class="btn btn-default" style="margin-bottom: 1em;">New winner</button>
+                    </div>
+                </div>
+                <div class="col-md-10 col-md-offset-1" id="newContactForm" style="margin-top: 2em;">
+                    <input id="currentContactId" style="display:none;">
+                    <div class="form-group">
+                        <label for="newContactFirstName">First name:</label>
+                        <input type="text" class="form-control"id="newContactFirstName" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="newContactLastName">Last name:</label>
+                        <input type="text" class="form-control" id="newContactLastName" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="newContactEmail">Email:</label>
+                        <input type="text" class="form-control" id="newContactEmail" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="newContactMobile">Mobile phone (example: +380671112233):</label>
+                        <input type="text" class="form-control" id="newContactMobile">
+                    </div>
+                    <div class="form-group">
+                        <label for="newContactMobile">Birth Date (example: 01.04.1999):</label>
+                        <input type="text" class="form-control" id="newContactBirth">
+                    </div>
+                    <div class="error" id="errorMessage">
+                        Wrong Data!
+                    </div>
+                    <button id="saveNewContact" class="btn btn-success" style="float:right;">Save Contact</button>
+                    <button id="editContact" class="btn btn-success" style="float:right;display:none;">Save Changes</button>
+                </div>
+                <table class="table table-hover" id="contacts" style="margin-top: 2em;">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>E-mail</th>
+                        <th>Mobile Phone</th>
+                        <th>Birth Date</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody id="contactsBody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
